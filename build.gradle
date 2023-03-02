@@ -4,7 +4,7 @@ buildscript {
     dependencies {
         classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
-        classpath "com.github.jadepeakpoet:arouter-register:$arouter_register_version"
+        classpath "com.custom.plugin:arouter-register:$arouter_register_version"
     }
 }
 

@@ -1,34 +1,27 @@
 pluginManagement {
     repositories {
-        maven {
-            url = "${rootDir}/build/repo"
-        }
-        mavenLocal()
-        gradlePluginPortal()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+        maven {
+            url uri('repo')
+        }
+        gradlePluginPortal()
         google()
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        maven {
-            url = "${rootDir}/build/repo"
-        }
-        mavenLocal()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+        maven {
+            url uri('repo')
+        }
         google()
     }
 }
-
 include ':app'
 include ':arouter-api'
 include ':arouter-compiler'
 include ':arouter-annotation'
-include ':module-java'
-include ':module-java-export'
-include ':module-kotlin'
 include ':arouter-gradle-plugin'
-//include ':arouter-idea-plugin'
+include ':business'
+include ':configs'

@@ -1,0 +1,97 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.custom.plugin",
+    "module": "arouter-compiler",
+    "version": "1.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "arouter-compiler-1.0.1.jar",
+          "url": "arouter-compiler-1.0.1.jar",
+          "size": 34118,
+          "sha512": "9da352b88c5978e7d048ac01c484eadcf2e6a05232a9e2b6cd8f853d9f4537692b480638f29fd9953f84c1cc0566b3d9a08b3af3d566e5cb9b033b1922430108",
+          "sha256": "e718f9436ede9f690a772d0532f2e4477400d33054de458157c43ff1c522fa44",
+          "sha1": "c0305732609a806c5cbca39582c0ac7513fbe476",
+          "md5": "516b3476af7aae2ef59d10a8d87e451d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.custom.plugin",
+          "module": "arouter-annotation",
+          "version": {
+            "requires": "1.0.1"
+          }
+        },
+        {
+          "group": "com.squareup",
+          "module": "javapoet",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-lang3",
+          "version": {
+            "requires": "3.12.0"
+          }
+        },
+        {
+          "group": "org.apache.commons",
+          "module": "commons-collections4",
+          "version": {
+            "requires": "4.4"
+          }
+        },
+        {
+          "group": "com.alibaba",
+          "module": "fastjson",
+          "version": {
+            "requires": "1.2.83"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "arouter-compiler-1.0.1.jar",
+          "url": "arouter-compiler-1.0.1.jar",
+          "size": 34118,
+          "sha512": "9da352b88c5978e7d048ac01c484eadcf2e6a05232a9e2b6cd8f853d9f4537692b480638f29fd9953f84c1cc0566b3d9a08b3af3d566e5cb9b033b1922430108",
+          "sha256": "e718f9436ede9f690a772d0532f2e4477400d33054de458157c43ff1c522fa44",
+          "sha1": "c0305732609a806c5cbca39582c0ac7513fbe476",
+          "md5": "516b3476af7aae2ef59d10a8d87e451d"
+        }
+      ]
+    }
+  ]
+}

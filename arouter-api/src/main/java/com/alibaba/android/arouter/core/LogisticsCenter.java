@@ -149,6 +149,7 @@ public class LogisticsCenter {
             if (registerByPlugin) {
                 logger.info(TAG, "Load router map by arouter-auto-register plugin.");
             } else {
+                logger.info(TAG, "registerBySelf");
                 Set<String> routerMap;
 
                 // It will rebuild router map every times when debuggable.

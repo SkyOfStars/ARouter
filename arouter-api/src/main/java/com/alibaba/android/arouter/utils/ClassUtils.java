@@ -35,6 +35,7 @@ import dalvik.system.DexFile;
  * @since 16/6/27 下午10:58
  */
 public class ClassUtils {
+    private static final String TAG = "ClassUtils";
     private static final String EXTRACTED_NAME_EXT = ".classes";
     private static final String EXTRACTED_SUFFIX = ".zip";
 
@@ -59,7 +60,7 @@ public class ClassUtils {
      */
     public static Set<String> getFileNameByPackageName(Context context, final String packageName) throws PackageManager.NameNotFoundException, IOException, InterruptedException {
         final Set<String> classNames = new HashSet<>();
-
+        Log.i(TAG, "getFileNameByPackageName: ");
         List<String> paths = getSourcePaths(context);
         final CountDownLatch parserCtl = new CountDownLatch(paths.size());
 

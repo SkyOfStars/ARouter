@@ -20,7 +20,7 @@ public class PluginLaunch implements Plugin<Project> {
         //only application module needs this plugin to generate register code
         if (isApp) {
             Logger.make(project)
-
+            println "make china"
             Logger.i('Project enable arouter-register plugin')
 
             def android = project.extensions.getByType(AppExtension)
